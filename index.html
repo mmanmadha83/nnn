@@ -100,18 +100,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     margin-bottom: 24px;
     position: relative;
   }
 
   .emblem svg {
-    width: 100%;
-    height: 100%;
+    width: 160%;
+    height: 160%;
     filter: drop-shadow(0 0 16px rgba(200,168,75,0.6));
     animation: emblem-pulse 3s ease-in-out infinite;
   }
+ .logo-img{
+  width:160%;
+  height:160%;
+  object-fit:contain;
+}
 
   @keyframes emblem-pulse {
     0%, 100% { filter: drop-shadow(0 0 12px rgba(200,168,75,0.5)); }
@@ -631,21 +636,9 @@
 
 <!-- Header -->
 <header>
-  <div class="emblem">
-    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="44" stroke="#c8a84b" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <circle cx="50" cy="50" r="36" stroke="#c8a84b" stroke-width="0.5" opacity="0.4"/>
-      <!-- Wings -->
-      <path d="M50 50 L10 38 L18 50 L10 62 Z" fill="#c8a84b" opacity="0.9"/>
-      <path d="M50 50 L90 38 L82 50 L90 62 Z" fill="#c8a84b" opacity="0.9"/>
-      <!-- Body -->
-      <ellipse cx="50" cy="50" rx="8" ry="14" fill="#c8a84b"/>
-      <!-- Cockpit -->
-      <ellipse cx="50" cy="42" rx="4" ry="5" fill="#0a0e1a" stroke="#c8a84b" stroke-width="0.5"/>
-      <!-- Star top -->
-      <polygon points="50,16 52,22 58,22 53,26 55,32 50,28 45,32 47,26 42,22 48,22" fill="#c8a84b" opacity="0.8"/>
-    </svg>
-  </div>
+<div class="emblem">
+  <img src="logo.png" alt="NCC Logo" class="logo-img">
+</div>
 
   <p class="rank-label">National Cadet Corps</p>
   <h1>AIR FORCE <span>WING</span></h1>
@@ -693,7 +686,7 @@
     </div>
 
     <!-- Card 2: Google Drive -->
-    <div class="option-card" href="https://drive.google.com/drive/folders/1WLdBC2I-OJj4lJr9f02gjd97BaEbtWS3" target="_blank">
+<a class="option-card" href="https://drive.google.com/drive/folders/1WLdBC2I-OJj4lJr9f02gjd97BaEbtWS3" target="_blank">
       <div class="card-corner tl"></div>
       <div class="card-corner br"></div>
       <div class="card-number">02 / 03</div>
@@ -710,14 +703,14 @@
         <div class="card-title">Google Drive</div>
       </div>
       <div class="card-body">
-        <div class="tag-coming">⬤ Drive ready</div>
+        <div class="tag-coming">⬤ Drive added</div>
         <p class="card-desc">Access the shared photo gallery, documents, and memories archive from the farewell events — all secured in the mission cloud drive.</p>
         <span class="card-action">
           Open Drive
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
       </div>
-    </div>
+    </a>
 
     <!-- Card 3: Venue Details -->
     <div class="option-card" onclick="document.getElementById('venueModal').classList.add('open')">
@@ -769,31 +762,23 @@
       <div class="venue-grid">
         <div class="venue-field">
           <span class="field-label">Venue Name</span>
-          <span class="field-value">To Be Announced</span>
+          <span class="field-value">Gayatri Vidya Parishad Dwaraka Nagar</span>
         </div>
         <div class="venue-field">
           <span class="field-label">Date</span>
-          <span class="field-value">To Be Confirmed</span>
+          <span class="field-value">27 MAY</span>
         </div>
         <div class="venue-field">
           <span class="field-label">Reporting Time</span>
-          <span class="field-value">To Be Confirmed</span>
+          <span class="field-value">10:30 AM</span>
         </div>
         <div class="venue-field">
           <span class="field-label">Dress Code</span>
-          <span class="field-value">NCC Uniform / Formal Attire</span>
+          <span class="field-value">Formal Attire</span>
         </div>
         <div class="venue-field full">
           <span class="field-label">Address</span>
-          <span class="field-value">To Be Announced — Location coordinates will be shared closer to the ceremony</span>
-        </div>
-        <div class="venue-field">
-          <span class="field-label">Entry</span>
-          <span class="field-value">ID Card Mandatory</span>
-        </div>
-        <div class="venue-field">
-          <span class="field-label">Contact Officer</span>
-          <span class="field-value">To Be Confirmed</span>
+          <span class="field-value">Gayatri Vidya parishad college for degree and PG courses ,5th Ln, Opp. SBI & IBPS Clerks, Madhuranagar, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016</span>
         </div>
       </div>
 
@@ -804,17 +789,17 @@
       </div>
 
       <div class="schedule-row">
-        <span class="schedule-time">TBD</span>
+        <span class="schedule-time">10:30 AM</span>
         <div class="schedule-event">
           Reporting & Registration
           <small>All cadets assemble at the venue entrance</small>
         </div>
       </div>
       <div class="schedule-row">
-        <span class="schedule-time">TBD</span>
+        <span class="schedule-time">11:00 AM</span>
         <div class="schedule-event">
           Welcome Address
-          <small>Commanding Officer's opening remarks</small>
+          <small>Seniors opening remarks</small>
         </div>
       </div>
       <div class="schedule-row">
